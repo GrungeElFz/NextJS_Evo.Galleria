@@ -13,6 +13,9 @@ export default function HomeScreen() {
       <h1 className="flex items-center justify-center text-center relative pt-48 text-black text-5xl font-normal">
         Model 3
       </h1>
+      <p className="flex items-center justify-center text-center relative pt-5 text-black text-lg font-light">
+        Explore Inventory
+      </p>
     </div>
   );
 }
