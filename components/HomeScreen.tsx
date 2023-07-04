@@ -8,6 +8,7 @@ export default function HomeScreen() {
         src="/Banner-Tesla.Model.3.avif"
         alt="Tesla Model 3"
         style={{ objectFit: "cover" }}
+        className="absolute z-0"
       />
     </div>
   );
