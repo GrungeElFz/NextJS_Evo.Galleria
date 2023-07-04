@@ -10,6 +10,9 @@ export default function HomeScreen() {
         style={{ objectFit: "cover" }}
         className="absolute z-0"
       />
+      <h1 className="flex items-center justify-center text-center relative pt-48 text-black text-5xl font-normal">
+        Model 3
+      </h1>
     </div>
   );
 }
