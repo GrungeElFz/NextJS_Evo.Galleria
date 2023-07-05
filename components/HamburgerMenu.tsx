@@ -18,26 +18,18 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 
-const frameworks = [
+const models = [
   {
-    value: "next.js",
-    label: "Next.js",
+    value: "roadster",
+    label: "Roadster",
   },
   {
-    value: "sveltekit",
-    label: "SvelteKit",
+    value: "model-s",
+    label: "Model S",
   },
   {
-    value: "nuxt.js",
-    label: "Nuxt.js",
-  },
-  {
-    value: "remix",
-    label: "Remix",
-  },
-  {
-    value: "astro",
-    label: "Astro",
+    value: "model-3",
+    label: "Model 3",
   },
 ];
 
@@ -63,12 +55,12 @@ export function HamburgerMenu() {
       </PopoverTrigger>
       <PopoverContent className="w-[200px] p-0">
         <Command>
-          <CommandInput placeholder="Search framework..." />
-          <CommandEmpty>No framework found.</CommandEmpty>
+          <CommandInput placeholder="Search Model..." />
+          <CommandEmpty>No model found.</CommandEmpty>
           <CommandGroup>
-            {frameworks.map((framework) => (
+            {models.map((model) => (
               <CommandItem
-                key={framework.value}
+                key={model.value}
                 onSelect={(currentValue) => {
                   setValue(currentValue === value ? "" : currentValue);
                   setOpen(false);
@@ -77,10 +69,10 @@ export function HamburgerMenu() {
                 <Check
                   className={cn(
                     "mr-2 h-4 w-4",
-                    value === framework.value ? "opacity-100" : "opacity-0"
+                    value === model.value ? "opacity-100" : "opacity-0"
                   )}
                 />
-                {framework.label}
+                {model.label}
               </CommandItem>
             ))}
           </CommandGroup>
