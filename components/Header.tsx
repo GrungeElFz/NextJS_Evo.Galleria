@@ -17,7 +17,12 @@ function Header() {
 
       {/* Menu */}
       <div className="absolute top-4 right-5">
-        <h1 className="text-red">Menu</h1>
+        {/* Hamburger SVG*/}
+        <svg viewBox="0 0 100 80" width="20" height="20">
+          <rect width="100" height="13"></rect>
+          <rect y="30" width="100" height="13"></rect>
+          <rect y="60" width="100" height="13"></rect>
+        </svg>
       </div>
     </header>
   );
