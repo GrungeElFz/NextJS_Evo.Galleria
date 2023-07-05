@@ -38,7 +38,7 @@ class CarCollection {
   }
 }
 
-const models: CarCollection[] = [
+const cars: CarCollection[] = [
   new CarCollection("Tesla", "Roadster", "tesla", "roadster"),
   new CarCollection("Tesla", "Model S", "tesla", "model-s"),
   new CarCollection("Tesla", "Model 3", "tesla", "model-3"),
