@@ -32,8 +32,15 @@ export default function HomeScreen() {
 
       {/* Bottom Buttons */}
       <div className="flex flex-rows items-center justify-center text-center absolute m-auto left-0 right-0 bottom-10 gap-5">
-        <Button variant="secondary" className="w-60 h-10">Explore Inventory</Button>
-        <Button variant="ghost" className="w-60 h-10 border-2 border-white text-white">Specification</Button>
+        <Button variant="secondary" className="w-60 h-10">
+          Explore Inventory
+        </Button>
+        <Button
+          variant="ghost"
+          className="w-60 h-10 border-2 border-white text-white"
+        >
+          Specification
+        </Button>
       </div>
     </div>
   );
