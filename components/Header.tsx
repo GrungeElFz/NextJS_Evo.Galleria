@@ -20,9 +20,15 @@ function Header() {
       {/* Models */}
       <div className="absolute m-auto top-4 left-0 right-0">
         <li className="flex flex-rows justify-center items-center gap-5">
-          <ul>Roadster</ul>
-          <ul>Model S</ul>
-          <ul>Model 3</ul>
+          <ul>
+            <a href="/tesla/roadster">Roadster</a>
+          </ul>
+          <ul>
+            <a href="/tesla/model-s">Model S</a>
+          </ul>
+          <ul>
+            <a href="/tesla/model-3">Model 3</a>
+          </ul>
         </li>
       </div>
 
