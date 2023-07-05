@@ -63,7 +63,7 @@ export function HamburgerMenu() {
           </svg>
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="w-[200px] p-0">
+      <PopoverContent className="w-48 p-0">
         <Command>
           <CommandInput placeholder="Search Model..." />
           <CommandEmpty>No model found.</CommandEmpty>
