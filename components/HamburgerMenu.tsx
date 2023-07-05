@@ -20,16 +20,16 @@ import {
 
 const models = [
   {
-    value: "roadster",
     label: "Roadster",
+    value: "roadster",
   },
   {
-    value: "model-s",
     label: "Model S",
+    value: "model-s",
   },
   {
-    value: "model-3",
     label: "Model 3",
+    value: "model-3",
   },
 ];
 
