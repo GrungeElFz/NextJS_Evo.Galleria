@@ -27,7 +27,7 @@ export default function HomeScreen() {
           <a
             href="https://www.tesla.com/inventory/new/m3?arrangeby=relevance&zip=61801&range=200"
             target="_blank"
-            className="underline"
+            className="hover:underline"
           >
             Explore Inventory
           </a>
