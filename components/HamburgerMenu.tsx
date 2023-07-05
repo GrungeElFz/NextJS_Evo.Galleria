@@ -88,6 +88,25 @@ export function HamburgerMenu() {
           <CommandInput placeholder="Search Model..." />
           <CommandEmpty>No model found.</CommandEmpty>
           <CommandGroup>
+            {cars.map((car) => (
+              <CommandItem
+                key={car.model_value}
+                onSelect={(currentValue) => {
+                  setValue(currentValue === value ? "" : currentValue);
+                  setOpen(false);
+                  router.push(`/${car.maker_value}/${car.model_value}`);
+                }}
+              >
+                <Check
+                  className={cn(
+                    "mr-2 h-4 w-4",
+                    value === car.model_value ? "opacity-100" : "opacity-0"
+                  )}
+                />
+                {car.model}
+              </CommandItem>
+            ))}
+
             {/* {models.map((model) => (
               <CommandItem
                 key={model.value}
