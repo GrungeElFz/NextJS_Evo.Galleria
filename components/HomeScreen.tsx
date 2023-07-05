@@ -12,12 +12,12 @@ export default function HomeScreen() {
         className="absolute z-0"
       />
 
-      <div className="flex flex-col items-center justify-between text-center relative pt-48">
+      <div className="flex flex-col items-center justify-between text-center relative mt-48">
         {/* Model */}
         <h1 className="text-black text-5xl font-normal">Model 3</h1>
 
         {/* Text */}
-        <p className="pt-5 text-black text-lg font-light">
+        <p className="mt-5 text-black text-lg font-light">
           <a
             href="https://www.tesla.com/inventory/new/m3?arrangeby=relevance&zip=61801&range=200"
             target="_blank"
