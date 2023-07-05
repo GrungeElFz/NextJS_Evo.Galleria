@@ -19,23 +19,48 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 
-const models = [
-  {
-    label: "Roadster",
-    maker: "tesla",
-    value: "roadster",
-  },
-  {
-    label: "Model S",
-    maker: "tesla",
-    value: "model-s",
-  },
-  {
-    label: "Model 3",
-    maker: "tesla",
-    value: "model-3",
-  },
+class CarCollection {
+  maker: string;
+  model: string;
+  maker_value: string;
+  model_value: string;
+
+  constructor(
+    maker: string,
+    model: string,
+    maker_value: string,
+    model_value: string
+  ) {
+    this.maker = maker;
+    this.model = model;
+    this.maker_value = maker_value;
+    this.model_value = model_value;
+  }
+}
+
+const models: CarCollection[] = [
+  new CarCollection("Tesla", "Roadster", "tesla", "roadster"),
+  new CarCollection("Tesla", "Model S", "tesla", "model-s"),
+  new CarCollection("Tesla", "Model 3", "tesla", "model-3"),
 ];
+
+// const models = [
+//   {
+//     label: "Roadster",
+//     maker: "tesla",
+//     value: "roadster",
+//   },
+//   {
+//     label: "Model S",
+//     maker: "tesla",
+//     value: "model-s",
+//   },
+//   {
+//     label: "Model 3",
+//     maker: "tesla",
+//     value: "model-3",
+//   },
+// ];
 
 export function HamburgerMenu() {
   const [open, setOpen] = React.useState(false);
@@ -63,7 +88,7 @@ export function HamburgerMenu() {
           <CommandInput placeholder="Search Model..." />
           <CommandEmpty>No model found.</CommandEmpty>
           <CommandGroup>
-            {models.map((model) => (
+            {/* {models.map((model) => (
               <CommandItem
                 key={model.value}
                 onSelect={(currentValue) => {
@@ -80,7 +105,7 @@ export function HamburgerMenu() {
                 />
                 {model.label}
               </CommandItem>
-            ))}
+            ))} */}
           </CommandGroup>
         </Command>
       </PopoverContent>
