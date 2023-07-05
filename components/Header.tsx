@@ -7,10 +7,12 @@ function Header() {
       </div>
 
       {/* Models */}
-      <div className="absolute flex flex-rows justify-center items-center m-auto top-4 left-0 right-0 gap-5">
-        <p>Item 1</p>
-        <p>Item 2</p>
-        <p>Item 3</p>
+      <div className="absolute m-auto top-4 left-0 right-0">
+        <li className="flex flex-rows justify-center items-center gap-5">
+          <ul>Item 1</ul>
+          <ul>Item 2</ul>
+          <ul>Item 3</ul>
+        </li>
       </div>
 
       {/* Menu */}
