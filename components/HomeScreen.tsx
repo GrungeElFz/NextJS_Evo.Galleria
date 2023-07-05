@@ -31,8 +31,8 @@ export default function HomeScreen() {
 
       {/* Bottom Buttons */}
       <div className="flex flex-rows items-center justify-center text-center absolute m-auto left-0 right-0 bottom-10 gap-5">
-        <Button>Button 1</Button>
-        <Button>Button 2</Button>
+        <Button>Explore Inventory</Button>
+        <Button>Specification</Button>
       </div>
     </div>
   );
