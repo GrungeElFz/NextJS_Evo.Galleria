@@ -9,9 +9,9 @@ function Header() {
       {/* Models */}
       <div className="absolute m-auto top-4 left-0 right-0">
         <li className="flex flex-rows justify-center items-center gap-5">
-          <ul>Item 1</ul>
-          <ul>Item 2</ul>
-          <ul>Item 3</ul>
+          <ul>Roadster</ul>
+          <ul>Model S</ul>
+          <ul>Model 3</ul>
         </li>
       </div>
 
