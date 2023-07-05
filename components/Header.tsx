@@ -1,3 +1,5 @@
+import { HamburgerMenu } from "@/components/HamburgerMenu";
+
 function Header() {
   return (
     <header className="flex flex-rows justify-center items-center text-center">
@@ -34,12 +36,7 @@ function Header() {
 
       {/* Menu */}
       <div className="absolute top-4 right-5">
-        {/* Hamburger SVG*/}
-        <svg viewBox="0 0 100 80" width="20" height="20">
-          <rect width="100" height="13"></rect>
-          <rect y="30" width="100" height="13"></rect>
-          <rect y="60" width="100" height="13"></rect>
-        </svg>
+        <HamburgerMenu />
       </div>
     </header>
   );
