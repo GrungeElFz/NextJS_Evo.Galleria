@@ -2,9 +2,7 @@
 
 import * as React from "react";
 import { useRouter } from "next/navigation";
-import { Check } from "lucide-react";
 
-import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import {
   Command,
@@ -79,12 +77,6 @@ export function HamburgerMenu() {
                   router.push(`/${car.maker_value}/${car.model_value}`);
                 }}
               >
-                <Check
-                  className={cn(
-                    "mr-2 h-4 w-4",
-                    value === car.model_value ? "opacity-100" : "opacity-0"
-                  )}
-                />
                 {car.model}
               </CommandItem>
             ))}
