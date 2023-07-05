@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
 
 export default function HomeScreen() {
@@ -12,6 +13,9 @@ export default function HomeScreen() {
         style={{ objectFit: "cover" }}
         className="absolute z-0"
       />
+
+      {/* Header */}
+      <Header />
 
       {/* Center Info */}
       <div className="flex flex-col items-center justify-between text-center relative mt-48">
