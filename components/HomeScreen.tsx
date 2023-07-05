@@ -12,21 +12,21 @@ export default function HomeScreen() {
         className="absolute z-0"
       />
 
-      {/* Model */}
-      <h1 className="flex flex-col items-center justify-between text-center relative pt-48 text-black text-5xl font-normal">
-        Model 3
-      </h1>
+      <div className="flex flex-col items-center justify-between text-center relative pt-48">
+        {/* Model */}
+        <h1 className="text-black text-5xl font-normal">Model 3</h1>
 
-      {/* Text */}
-      <p className="flex items-center justify-center text-center relative pt-5 text-black text-lg font-light">
-        <a
-          href="https://www.tesla.com/inventory/new/m3?arrangeby=relevance&zip=61801&range=200"
-          target="_blank"
-          className="underline"
-        >
-          Explore Inventory
-        </a>
-      </p>
+        {/* Text */}
+        <p className="pt-5 text-black text-lg font-light">
+          <a
+            href="https://www.tesla.com/inventory/new/m3?arrangeby=relevance&zip=61801&range=200"
+            target="_blank"
+            className="underline"
+          >
+            Explore Inventory
+          </a>
+        </p>
+      </div>
     </div>
   );
 }
