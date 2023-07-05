@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 export default function HomeScreen() {
   return (
@@ -26,6 +27,12 @@ export default function HomeScreen() {
             Explore Inventory
           </a>
         </p>
+      </div>
+
+      {/* Bottom Buttons */}
+      <div className="flex flex-rows items-center justify-center text-center absolute m-auto left-0 right-0 bottom-10 gap-5">
+        <Button>Button 1</Button>
+        <Button>Button 2</Button>
       </div>
     </div>
   );
