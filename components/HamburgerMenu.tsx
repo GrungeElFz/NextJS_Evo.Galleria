@@ -22,14 +22,17 @@ import {
 const models = [
   {
     label: "Roadster",
+    maker: "tesla",
     value: "roadster",
   },
   {
     label: "Model S",
+    maker: "tesla",
     value: "model-s",
   },
   {
     label: "Model 3",
+    maker: "tesla",
     value: "model-3",
   },
 ];
@@ -66,7 +69,7 @@ export function HamburgerMenu() {
                 onSelect={(currentValue) => {
                   setValue(currentValue === value ? "" : currentValue);
                   setOpen(false);
-                  router.push(`/tesla/${model.value}`);
+                  router.push(`/${model.maker}/${model.value}`);
                 }}
               >
                 <Check
