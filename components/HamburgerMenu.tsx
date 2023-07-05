@@ -44,24 +44,6 @@ const cars: CarCollection[] = [
   new CarCollection("Tesla", "Model 3", "tesla", "model-3"),
 ];
 
-// const models = [
-//   {
-//     label: "Roadster",
-//     maker: "tesla",
-//     value: "roadster",
-//   },
-//   {
-//     label: "Model S",
-//     maker: "tesla",
-//     value: "model-s",
-//   },
-//   {
-//     label: "Model 3",
-//     maker: "tesla",
-//     value: "model-3",
-//   },
-// ];
-
 export function HamburgerMenu() {
   const [open, setOpen] = React.useState(false);
   const [value, setValue] = React.useState("");
@@ -106,25 +88,6 @@ export function HamburgerMenu() {
                 {car.model}
               </CommandItem>
             ))}
-
-            {/* {models.map((model) => (
-              <CommandItem
-                key={model.value}
-                onSelect={(currentValue) => {
-                  setValue(currentValue === value ? "" : currentValue);
-                  setOpen(false);
-                  router.push(`/${model.maker}/${model.value}`);
-                }}
-              >
-                <Check
-                  className={cn(
-                    "mr-2 h-4 w-4",
-                    value === model.value ? "opacity-100" : "opacity-0"
-                  )}
-                />
-                {model.label}
-              </CommandItem>
-            ))} */}
           </CommandGroup>
         </Command>
       </PopoverContent>
