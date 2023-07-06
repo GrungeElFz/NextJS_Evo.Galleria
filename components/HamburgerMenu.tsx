@@ -54,7 +54,7 @@ export function HamburgerMenu() {
           variant="ghost"
           role="combobox"
           aria-expanded={open}
-          className="w-full"
+          className="w-full hover:bg-background-dark"
         >
           <svg viewBox="0 0 100 80" width="20" height="20" fill="#FFFFFF">
             <rect width="100" height="13"></rect>
