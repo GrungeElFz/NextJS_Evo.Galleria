@@ -6,13 +6,37 @@ export default function HomeScreen() {
   return (
     <div className="h-screen w-screen">
       {/* Background Image */}
-      <Image
+      {/* <Image
         fill
         src="/Banner-Tesla.Model.3.avif"
         alt="Tesla Model 3"
         style={{ objectFit: "cover" }}
         className="absolute z-0"
-      />
+      /> */}
+
+      {/* Background Video */}
+      <video
+        title="Tesla Model 3"
+        autoPlay
+        loop
+        muted
+        preload="auto"
+        style={{ objectFit: "cover" }}
+        className="absolute h-screen w-screen z-0"
+        data-loaded="true"
+        data-autoplay-desktop="true"
+        data-autoplay-portrait="true"
+        data-autoplay-mobile="true"
+        poster="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-3-Main-Hero-Desktop-Poster-NA.jpg"
+        data-poster-desktop="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-3-Main-Hero-Desktop-Poster-NA.jpg"
+        data-poster-portrait="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-3-Main-Hero-Desktop-Poster-NA.jpg"
+        data-poster-mobile="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-3-Main-Hero-Mobile-Poster-NA.jpg"
+        data-src-desktop="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto/Model-3-Main-Hero-Desktop-LHD-Animation.webm"
+        data-src-portrait="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto/Model-3-Main-Hero-Desktop-LHD-Animation.webm"
+        data-src-mobile="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto/Model-3-Main-Hero-Mobile-LHD-Animation.webm"
+        data-src="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto/Model-3-Main-Hero-Desktop-LHD-Animation.webm"
+        src="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto/Model-3-Main-Hero-Desktop-LHD-Animation.webm"
+      ></video>
 
       {/* Header */}
       <Header />
