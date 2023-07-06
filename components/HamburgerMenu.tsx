@@ -56,7 +56,7 @@ export function HamburgerMenu() {
           aria-expanded={open}
           className="w-full"
         >
-          <svg viewBox="0 0 100 80" width="20" height="20">
+          <svg viewBox="0 0 100 80" width="20" height="20" fill="#FFFFFF">
             <rect width="100" height="13"></rect>
             <rect y="30" width="100" height="13"></rect>
             <rect y="60" width="100" height="13"></rect>
