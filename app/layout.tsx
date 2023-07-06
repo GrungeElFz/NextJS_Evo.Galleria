@@ -25,7 +25,7 @@ export default function RootLayout({
           content="Discover an exceptional of my selected EVs collection."
         />
         <meta name="viewport" content="width=device-width" />
-        <link rel="icon" type="image/png" href="/e-icon.png" />
+        <link rel="icon" type="image/png" href="/icon.png" />
 
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
